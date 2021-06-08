@@ -14,6 +14,9 @@ Imports:
     tidyverse,
     modelr,
     dplyr,
-    ggplot2
+    ggplot2,
+    purrr,
+    tidyr,
+    broom
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.0

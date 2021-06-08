@@ -5,7 +5,5 @@
 #' @export predictors
 
 predictors <- function(df, response) {
-  if(!is.numeric(response)) {
-    stop("Dumb A$$")
-  }
+  models <- create_models(df, response)
 }

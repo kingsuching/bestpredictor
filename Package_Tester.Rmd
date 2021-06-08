@@ -17,5 +17,13 @@ sf_salaries <- read.csv("/Users/sucheen/Documents/Cal Poly SLO/Academics/Spring 
 
 ```{r}
 sf_salaries[, unlist(lapply(sf_salaries, is.numeric))]
-map(names(sf_salaries), ~lm(TotalPay ~ .x, data = sf_salaries))
+response = "TotalPay"
+sf_salaries <- select(sf_salaries, Id, EmployeeName, JobTitle, BasePay, OvertimePay,OtherPay, TotalPay, TotalPayBenefits, Year, Agency) %>%
+  select_if(is.numeric)
+final <- c()
+for(i in names(sf_salaries)) {
+  f <- paste(response, "~", i)
+  m <- lm(formula = f, data = sf_salaries) %>% anova() %>% pluck("Sum Sq")
+  final <- append(final, m)
+}
 ```

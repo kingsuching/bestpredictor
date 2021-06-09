@@ -1,22 +1,24 @@
 Package: bestpredictor
-Title: Find the best predictors of a quantitative variable using ANOVA
-Version: 0.0.0.1
+Title: Predict It
+Version: 0.0.0.9000
 Authors@R: 
     person(given = "Sucheen",
            family = "Sundaram",
            role = c("aut", "cre"),
            email = "sssundar@calpoly.edu")
-Description: Final Project package.
+Description: This is a package for a project.
 License: What license it uses
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    tidyverse,
-    modelr,
     dplyr,
-    ggplot2,
-    purrr,
-    tidyr,
-    broom
+    stringr,
+    magrittr
 Roxygen: list(markdown = TRUE)
+<<<<<<< HEAD
 RoxygenNote: 7.1.1
+=======
+RoxygenNote: 7.1.0
+Suggests: 
+    testthat
+>>>>>>> d689b5866bc17179c631ef5c66f778aaa3802598

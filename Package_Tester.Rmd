@@ -33,7 +33,8 @@ for(i in names(sf_salaries)) {
 
 ```{r}
 babies_ca <- read.csv("~/Documents/Cal Poly SLO/Academics/Spring 2021/STAT 331-01/Data/babies_ca.csv")
-babies_ca %>%
-  select_if(is.numeric)
-predictors(babies_ca, "Count")
+data.frame(x = c(1,NA,NA)) %>%
+  select_if(is.numeric) %>%
+  drop_na()
+predictors(sf_salaries, "TotalPayBenefits")
 ```

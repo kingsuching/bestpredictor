@@ -18,7 +18,10 @@ predictors <- function(df, response) {
       final <- append(final, m[1])
     }
   }
-  return(max(final))
+  #return(max(final))
+  max_index <- index(final, max(final))
+  value <- names(df)[max_index]
+  return(value)
 }
 
-predictors(sf_salaries, "Year")
+predictors(sf_salaries, "TotalPayBenefits")

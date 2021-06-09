@@ -8,7 +8,7 @@
 #' @export create_models
 
 index <- function(finals, element) {
-  idx <- 0
+  idx <- 1
   for(i in finals) {
     if(i == element) {
       return(idx)

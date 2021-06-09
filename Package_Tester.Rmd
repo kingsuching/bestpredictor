@@ -10,8 +10,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
-library(bestpredictor)
+library(githubinstall)
+library(devtools)
 library(tidyverse)
+library(bestpredictor)
 sf_salaries <- read.csv("/Users/sucheen/Documents/Cal Poly SLO/Academics/Spring 2021/STAT 331-01/Data/SF_Salaries_sub.csv")
 ```
 
@@ -27,4 +29,9 @@ for(i in names(sf_salaries)) {
     pluck("Sum Sq")
   print(model[1])
 }
+```
+
+```{r}
+babies_ca <- read_csv("~/Documents/Cal Poly SLO/Academics/Spring 2021/STAT 331-01/Data/babies_ca.csv")
+predictors(min_wage, "Low.Value")
 ```

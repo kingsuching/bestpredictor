@@ -23,3 +23,5 @@ predictors <- function(df, response) {
   value <- names(df)[max_index]
   return(value)
 }
+
+predictors(sf_salaries, "Year")

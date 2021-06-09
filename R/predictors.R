@@ -15,7 +15,7 @@ predictors <- function(df, response) {
   for(i in names(df)) {
     if(i != response) {
       f <- paste(response, "~", i)
-      m <- lm(formula = f, data = sf_salaries) %>% anova() %>% pluck("Sum Sq")
+      m <- lm(formula = f, data = df) %>% anova() %>% pluck("Sum Sq")
       final <- append(final, m[1])
     }
   }

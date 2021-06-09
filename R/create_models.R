@@ -6,9 +6,9 @@
 #' @return all possible linear regressions of the dataset
 #' @export create_models
 
-plot <- function(df, yvar, xvar) {
+plot <- function(df, response, explanatory) {
   df %>%
-    ggplot(aes(x=xvar, y=yvar)) + geom_point() + geom_smooth(method = 'lm')
+    ggplot(aes(x=explanatory, y=response)) + geom_point() + geom_smooth(method = 'lm')
 }
 
-plot(sf_salaries, "TotalPay")
+plot(sf_salaries, "TotalPay", "BasePay")

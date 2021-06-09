@@ -4,7 +4,7 @@
 #' @import dplyr
 #' @import broom
 #' @param df dataframe
-#' @return best predictors (numeric) in the dataset
+#' @return Sum of squares for the variable that explains the most variation in the dataset
 #' @export predictors
 
 predictors <- function(df, response) {
@@ -21,4 +21,4 @@ predictors <- function(df, response) {
   return(max(final))
 }
 
-predictors(sf_salaries, "TotalPayBenefits")
+predictors(sf_salaries, "Year")

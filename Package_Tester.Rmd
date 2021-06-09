@@ -37,4 +37,5 @@ data.frame(x = c(1,NA,NA)) %>%
   select_if(is.numeric) %>%
   drop_na()
 predictors(sf_salaries, "TotalPayBenefits")
+
 ```

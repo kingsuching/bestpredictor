@@ -36,5 +36,4 @@ babies_ca <- read.csv("~/Documents/Cal Poly SLO/Academics/Spring 2021/STAT 331-0
 babies_ca %>%
   git
 predictors(babies_ca, "Count")
-#test
 ```

@@ -15,10 +15,6 @@ Imports:
     stringr,
     magrittr
 Roxygen: list(markdown = TRUE)
-<<<<<<< HEAD
-RoxygenNote: 7.1.1
-=======
 RoxygenNote: 7.1.0
 Suggests: 
     testthat
->>>>>>> d689b5866bc17179c631ef5c66f778aaa3802598

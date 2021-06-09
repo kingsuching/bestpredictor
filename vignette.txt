@@ -1,0 +1,1 @@
+This package calculates the explanatory variable (numeric) that explains the most amount of variation for a given response variable. It can be useful for honing into more specific analyses. For the predictor function, df can be any dataframe and response must be a string of the response variable in the dataset. Enjoy the package!

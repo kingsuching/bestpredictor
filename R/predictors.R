@@ -11,6 +11,7 @@ predictors <- function(df, response) {
   df <- df %>%
     select_if(is.numeric)
   final <- c()
+  names(df) <- make.names(names(df))
   for(i in names(df)) {
     if(i != response) {
       f <- paste(response, "~", i)

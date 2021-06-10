@@ -33,9 +33,7 @@ for(i in names(sf_salaries)) {
 
 ```{r}
 babies_ca <- read.csv("~/Documents/Cal Poly SLO/Academics/Spring 2021/STAT 331-01/Data/babies_ca.csv")
-babies_ca %>%
-  git
 predictors(babies_ca, "Count")
 
-bestpredictor::predictors(sf_salaries, "BasePay")
+bestpredictor::predictors(babies_ca, "Count")
 ```

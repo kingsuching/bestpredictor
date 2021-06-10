@@ -4,6 +4,8 @@
 #' @import dplyr
 #' @import broom
 #' @param df dataframe
+#' @param response response variable
+#' @param explanatory explanatory variable
 #' @return Sum of squares for the variable that explains the most variation in the dataset
 #' @export significance
 

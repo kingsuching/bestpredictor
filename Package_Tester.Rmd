@@ -14,7 +14,6 @@ library(githubinstall)
 library(devtools)
 library(tidyverse)
 library(bestpredictor)
-install_github("kingsuching/bestpredictor", force = TRUE)
 sf_salaries <- read.csv("/Users/sucheen/Documents/Cal Poly SLO/Academics/Spring 2021/STAT 331-01/Data/SF_Salaries_sub.csv")
 ```
 
